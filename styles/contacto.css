@@ -1,0 +1,17 @@
+/* ====== CONTACTO ====== */
+    .contacto-section{padding:56px 24px;background:#fff}
+    .contact-form{max-width:600px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+    .form-row{display:flex;flex-direction:column;gap:6px}
+    .form-row input,.form-row select,.form-row textarea{
+      padding:10px;border:1px solid #ccc;border-radius:8px;font-family:inherit
+    }
+    fieldset{border:1px solid #ddd;border-radius:8px;padding:12px}
+    legend{font-weight:600}
+    .checks label{display:block}
+    .form-actions{display:flex;gap:12px}
+    .btn-submit{
+      background:var(--brand);color:#fff;border:0;padding:12px 24px;border-radius:999px;cursor:pointer
+    }
+    .btn-submit:hover{background:var(--brand-dark)}
+    .btn-reset{background:#eee;border:0;padding:12px 24px;border-radius:999px;cursor:pointer}
+    .btn-reset:hover{background:#ddd}

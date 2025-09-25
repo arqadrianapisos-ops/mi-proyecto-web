@@ -1,0 +1,97 @@
+/* ===== HERO ===== */
+.home-section{padding:16px 24px}
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.55), rgba(0,0,0,0));
+  z-index: 1;
+}
+.hero-copy {
+  position: absolute;
+  bottom: 40px;
+  left: 24px;
+  right: 24px;
+  max-width: 720px;
+  color: #fff;
+  z-index: 2;
+  text-shadow: 0 2px 6px rgba(0,0,0,.35);
+  .hero-copy h1{
+      font-family:"Playfair Display",serif;
+      font-size:clamp(28px,4vw,48px);line-height:1.15;margin-bottom:10px;
+    }
+    .hero-copy em{color:#edcc9a;font-style:normal}
+    .cta-btn{
+      display:inline-block;padding:12px 22px;border-radius:999px;
+      background:var(--brand);color:#fff;text-decoration:none;font-weight:700;
+      transition:background .2s, transform .12s;
+    }
+    .cta-btn:hover{background:var(--brand-dark);transform:translateY(-1px)}
+}
+
+/* ===== TEXTO CON EFECTO ESCRITURA ===== */
+.typing-text {
+  display: inline-block;
+  overflow: hidden; 
+  border-right: .15em solid currentColor; /* cursor */
+  color: #b16c6c;
+  white-space: nowrap;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(48px, 10vw, 120px);
+  font-weight: 700;
+  width:0;
+  animation: typing 1.8s steps(6,end) forwards, blink 0.7s step-end 3,
+  hide-cursor .1s forwards 1.9s;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width:100% }
+}
+
+@keyframes blink {
+ from, to { border-color: transparent }
+  50% { border-color:#f9f6f6}
+
+}
+@keyframes hide-cursor {
+  to { border-right: none; }
+}
+.dorado{color:rgba(255, 217, 0, 0.808)}
+font-style:italic; /*cursiva*/
+
+/* ===== SLOGAN (fade-in después) ===== */
+.slogan {
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+  animation-delay: 3.2s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* ====== ABOUT ====== */
+    .about{
+      max-width:900px;margin:40px auto 0; padding:0 20px; text-align:center;
+    }
+    .about h2{
+      font-family:"Playfair Display",serif;font-size:2rem;margin-bottom:12px;
+    }
+    .pago-icons{
+      display:flex;gap:20px;justify-content:center;margin-top:18px;font-size:.95rem;
+    }
+    .pago-icons i{color:var(--brand);margin-right:6px}
+    

@@ -1,0 +1,14 @@
+/* ====== GALERÍA ====== */
+    .galeria-section{padding:56px 24px}
+    .galeria-section h2{
+      text-align:center;font-family:"Playfair Display",serif;font-size:2rem;margin-bottom:24px;
+    }
+    .galeria-grid{
+      max-width:1200px;margin:0 auto;display:grid;gap:12px;grid-template-columns:repeat(4,1fr);
+    }
+    /* Miniaturas cuadradas uniformes */
+    .tile{aspect-ratio:1/1;overflow:hidden;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,.06)}
+    .tile img{width:100%;height:100%;object-fit:cover;transition:transform .15s}
+    .tile img:hover{transform:scale(1.05)}
+    @media (max-width:900px){.galeria-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:600px){.galeria-grid{grid-template-columns:1fr}}

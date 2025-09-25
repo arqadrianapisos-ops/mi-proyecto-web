@@ -1,0 +1,43 @@
+ /* ====== VARIABLES Y BASE ====== */
+    :root{
+      --ink:#934747;
+      --muted:#666;
+      --bg:#faf7f9;
+      --brand:#8e2e54;
+      --brand-dark:#8c3a59;
+      --radius:16px;
+      --shadow:0 8px 18px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family:"Montserrat",sans-serif;
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.6;
+    }
+    img{max-width:100%;height:auto;display:block}
+    /* ====== HEADER / NAV ====== */
+    .site-header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid #eee}
+    .navbar{
+      max-width:1200px;margin:0 auto;padding:14px 24px;
+      display:flex;align-items:center;justify-content:space-between;gap:12px;
+    }
+    .logo-img{height:56px;width:auto;display:block}
+    .nav-toggle{display:none;border:0;background:transparent;font-size:1.8rem;cursor:pointer}
+    .nav-links{list-style:none;display:flex;gap:22px}
+    .nav-links a{text-decoration:none;color:var(--ink);font-weight:600}
+    .nav-links a:hover{color:var(--brand)}
+    @media (max-width:900px){
+      .nav-toggle{display:block}
+      .nav-links{
+        position:absolute;right:24px;top:64px;display:none;
+        flex-direction:column;background:#fff;border:1px solid #eee;border-radius:12px;
+        box-shadow:var(--shadow);padding:12px;width:220px;
+      }
+      .nav-links.open{display:flex}
+    }
+    /* ====== FOOTER ====== */
+    .site-footer{border-top:1px solid #eee;text-align:center;padding:20px;color:var(--muted)}
+    /* Debug (opcional temporal): pinta en rojo si hay overflow horizontal */
+html, body { overflow-x: hidden; }
