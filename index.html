@@ -20,12 +20,13 @@
 </head>
 <body>
  <header class="site-header">
-    <nav class="navbar">
+    <nav class="navbar" aria-label=">
       <a class="logo" href="#home">
         <img src="img/logorosart.png" alt="Rosart logo" class="logo-img">
       </a>
-         <button id="navToggle" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
-      <ul id="navLinks" class="nav-links">
+      <input type="checkbox" id="nav-toggle" class="nav-checkbox" aria-hidden="true">
+         <label for="nav-toggle" class=nav-button" aria-label="Abrir/cerrar menú" role= "button"tabindex="0">☰</label>
+      <ul class="nav-links">
         <li><a href="#home">Inicio</a></li>
         <li><a href="#about">Quiénes somos</a></li>
         <li><a href="#cards">Productos</a></li>
@@ -45,7 +46,7 @@
               <h1 class="typing-text">Rosart</h1> 
 
           
-          <h1>"Regalos que" <span class="dorado"><em>florecen</em></span>" para siempre"</h1>
+          <h1>Regalos que <span class="dorado"><em>florecen</em></span>para siempre</h1>
           <p>Detalles artesanales y elegantes para celebrar momentos que perduran.</p>
           <a href="#cards" class="cta-btn">Ver catálogo</a>
         </div>
