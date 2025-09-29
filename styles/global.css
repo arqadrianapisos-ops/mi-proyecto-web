@@ -80,4 +80,25 @@ img{max-width:100%;height:auto;display:block}
 
 /* Debug opcional */
 html, body { overflow-x: hidden; }
+.whatsapp-fab {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #25D366;
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(0,0,0,.18);
+  z-index: 200;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+.whatsapp-fab:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
 
