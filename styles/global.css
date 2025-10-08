@@ -18,7 +18,7 @@ body{
 }
 img{max-width:100%;height:auto;display:block}
 
-/* ====== HEADER / NAV (solo HTML+CSS) ====== */
+/* ====== HEADER  ====== */
 .site-header{
   position:sticky;top:0;z-index:100;
   background:#fff;border-bottom:1px solid #eee;
@@ -32,7 +32,7 @@ img{max-width:100%;height:auto;display:block}
 /* Checkbox oculto */
 .nav-checkbox{display:none}
 
-/* Botón hamburguesa */
+/* Botón  */
 .nav-button{
   display:none;
   font-size:1.8rem;
@@ -77,8 +77,8 @@ img{max-width:100%;height:auto;display:block}
   padding:20px;
   color:var(--muted)
 }
+/* ====== BOTÓN FLOTANTE WHATSAPP ====== */
 
-/* Debug opcional */
 html, body { overflow-x: hidden; }
 .whatsapp-fab {
   position: fixed;
