@@ -67,8 +67,8 @@
   to  { width: calc(var(--chars) * 1ch); }
 }
 .dorado{ 
-  color:#edcc9a;     /* tu dorado */
-  font-style: normal;/* el span en normal... */
+  color:#edcc9a;     /*  dorado */
+  font-style: normal;
 }
 .dorado em{
   font-style: italic;/* ...y el <em> en itálica */
