@@ -50,7 +50,7 @@
   color:#b16c6c;
   font-family:"Playfair Display", serif;
   font-weight:700;
-  font-size: clamp(120px, 8vw, 208px);
+  font-size: 60px;
   line-height: 1;
 }
 
@@ -98,3 +98,4 @@
 @media (max-width:480px){
 
 }
+
