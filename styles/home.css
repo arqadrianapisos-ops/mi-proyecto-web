@@ -50,7 +50,7 @@
   color:#b16c6c;
   font-family:"Playfair Display", serif;
   font-weight:700;
-  font-size: 260px; /* tamaño fijo */
+  font-size: clamp(120px, 8vw, 208px);
   line-height: 1;
 }
 
@@ -65,6 +65,13 @@
 @keyframes typing{
   from{ width:0; }
   to  { width: calc(var(--chars) * 1ch); }
+}
+.dorado{ 
+  color:#edcc9a;     /* tu dorado */
+  font-style: normal;/* el span en normal... */
+}
+.dorado em{
+  font-style: italic;/* ...y el <em> en itálica */
 }
 
 
