@@ -1,4 +1,24 @@
 /* ====== VARIABLES Y BASE ====== */
+html {
+  scroll-padding-top: 84px; /* el alto exacto de tu header */
+  scroll-behavior: smooth;
+}
+/* === Altura del header sticky === */
+:root{
+  --header-h: 84px;     /* desktop */
+}
+@media (max-width: 768px){
+  :root{ --header-h: 96px; } /* mobile, ajusta si el header mide distinto */
+}
+
+/* Suaviza el desplazamiento */
+html{ scroll-behavior:smooth; }
+
+/* Desplazar el punto de anclaje por sección */
+section[id], header[id], main[id], footer[id], div.anchor-target[id]{
+  scroll-margin-top: var(--header-h);
+}
+
 :root{
   --ink:#934747;
   --muted:#666;
@@ -7,6 +27,28 @@
   --brand-dark:#8c3a59;
   --radius:16px;
   --shadow:0 8px 18px rgba(0,0,0,.08);
+}
+/* ===== Offset robusto para anclas con header fijo ===== */
+:target::before{
+  content: "";
+  display: block;
+  height: 84px;      /* altura del header desktop */
+  margin-top: -84px;
+}
+
+@media (max-width: 768px){
+  :target::before{
+    height: 96px;      /* altura aproximada en mobile */
+    margin-top: -96px;
+  }
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px; /* opcional, suma */
+}
+@media (max-width: 768px){
+  html{ scroll-padding-top: 96px; }
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
@@ -102,3 +144,17 @@ html, body { overflow-x: hidden; }
   transform: translateY(-2px);
 }
 
+.site-header{
+  position: sticky;   /* <- NO fixed */
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+.site-header .navbar{
+  min-height: 84px;   /* tu altura medida en desktop */
+  padding: 8px 16px;
+}
+@media (max-width:768px){
+  .site-header .navbar{ min-height: 96px; } /* ajusta si en móvil mide otra cosa */
+}
